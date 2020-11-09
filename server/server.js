@@ -16,7 +16,7 @@ mongoose.connect(process.env.URLDB, { useNewUrlParser: true, useCreateIndex: tru
         console.log('Base de datos ONLINE');
     });
 
-app.use(require('./routers/usuario'));
+app.use(require('./routers/index'));
 
 app.listen(process.env.PORT, () => {
     console.log('console en el puerto ' + process.env.PORT);
